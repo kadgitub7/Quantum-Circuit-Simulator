@@ -47,3 +47,17 @@ Multiply A by its transpose and if it is the identity matrix then it is else it 
 3) to find the length of a vector given byt he sum of constants and vector, get the sum of the squares of the constants.
 
 Chapter 3.
+
+Combining these previous two chapters to illustrate spin and qubits.
+
+Probability is how likely something is to happen. It is put into contect and comes about based ona  finite number of outcomes each with an associated probability which stems from out of a given number of tries how often a particular outcome arrives. With a fair coin this is usually 0.5 for each side. The probabilities are between 0 and 1 and all sum to 1.
+
+FOr a qubit if you make the same measurement again and again the same results arrives. Therefore if you make a measurement in the vertical direction and it is north, p_n = 1, and p_s = 0 for the next measurement in that same direction. Now if you make the measurement in the horizontal direction that is completely random and therefore p_n = 0.5, and p_s = 0.5.
+
+Spin has two values and therefore the dimention of vectors i 2d. There are associated probability amplitudes for each direction and their square represents the probability when the electron is measured we will get that spin. Therefore c_1 ^ 2 + c_2 ^2 = 1. Once a measurement has been made the spin is set for concequent sam emeasurements. Therefore the probability anmplitudes get set to 1 and 0 depending on which one was observed first. Once this is done if we make a measurement in the opposite direction we don't know the probability amplitudes but the vectors are x = [1/root(2), -1/root(2)], and y = [1/root(2), 1/root(2)]. To solve the amplitudes we can set the equation as:
+v = c_1 * x + c_2 * y
+We can construct A = x|y = [[1/root(2), -1/root(2)], [1/root(2), 1/root(2)]]. If we take the transpose then we can multiply this my V and that will give us the values of x and y: [1/root(2), 1/root(2)]. If we square both these values they both are 0.5 which means there is an actual random change of each one. Similarly if you do this again for the first measurement now that this amplitudes are set you will find that is also random now.
+
+Now since the probability amplitudes are squared to get the probabilities, a negative value is indistinguishable from a positive value. We can also envision thisi by understanding that the basis vectors can be given as [[1,0], [0,1]]. We can then represent rotations by [[cos(a), -sin(a)], [sin(a), cos(a)]]. Using this convention we can calculate the probability of measurement in N and S direction based on any degree change.
+
+A qubit is any unit ket in R^2. 
