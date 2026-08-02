@@ -61,3 +61,19 @@ We can construct A = x|y = [[1/root(2), -1/root(2)], [1/root(2), 1/root(2)]]. If
 Now since the probability amplitudes are squared to get the probabilities, a negative value is indistinguishable from a positive value. We can also envision thisi by understanding that the basis vectors can be given as [[1,0], [0,1]]. We can then represent rotations by [[cos(a), -sin(a)], [sin(a), cos(a)]]. Using this convention we can calculate the probability of measurement in N and S direction based on any degree change.
 
 A qubit is any unit ket in R^2. 
+
+Chapter 4.
+Entanglement
+The Tesor product is a way to join two vector spaces together to make a bigger space and therefore can engtangle the spaces. Therefore you can get instances where observing one qubit can change the value of another qubit.
+
+This is mathematically modelled by the FOIL method and is represented by an XOR gate symbol. Since it is represented as:
+[c_0(|a_0>) + c_1(|a_1>)] * [d_0(|b_0>) + d_1(|b_1>)] = 
+c_0 * d_0 (|a_0> |b_0>) + c_0 * d_1 (|a_0> |b_1>) + c_1 * d_0 (|a_1> |b_0>) + c_1 * d_1 (|a_1> |b_1>).
+
+We must be careful to note that the order of these values matters since this is vector multiplication and therefore if the order is switched a different results may occur. These final values a_0 *b_0, a_0 * b_1, a_1 * b_0, a_1 * b_1 are all orthonormal basis of the new vector space. They are all orthogonal to each other and unit. Each of the values in front of the combination of orthonormal basis vectors are the respective probability amplitudes for those states. Squaring them gives the probability. For example c_0 * d_0 is a probability amplitude and squaring it gives the probability of that given state. 
+
+We can then convert the values of c_0 * d_0 and subsequent values as r,s,t,u where r^2 + s^2 + t^2 + u^2 = 1 and ru = st. This is true if the system is untangled(the values can be serperated and are therfore independent of each other). If ru /= st then the system is entangled as you are therfore not able to seperate the two states and get independent values for A and B.
+
+When unentangled the tensor product is fully spereable and this means measurement on one qubit has no effect on another. If they are not seperable and must be mized together, then measurement on one qubit can affect the other. 
+
+Chapter 5.
