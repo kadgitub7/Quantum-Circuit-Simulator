@@ -77,3 +77,6 @@ We can then convert the values of c_0 * d_0 and subsequent values as r,s,t,u whe
 When unentangled the tensor product is fully spereable and this means measurement on one qubit has no effect on another. If they are not seperable and must be mized together, then measurement on one qubit can affect the other. 
 
 Chapter 5.
+This chapter is a discussion on the debate between quantum theory and classical model of determinism. It ddebates and a test from Bell shows which one is accurate. Through this debate it is widely recognized that the classical model is incorrect.
+
+Chapter 6.
