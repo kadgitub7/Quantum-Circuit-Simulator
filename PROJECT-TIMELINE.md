@@ -6,7 +6,7 @@ This .md file is for people that want to understand what process as well as stug
 ## 1. Learning phase
 Reading through Quantum Computing for Everyone by Chris Bernhardt to learn the concept necessary for this project
 
-Chapter 1.
+### Chapter 1.
 Quantum computing is similar but very different from normal computing. The basic unit of data in computing is the bit, it acts as a switch 0 or 1. In quantum computing the basic unit is a qubit which can be 0, 1 or a uperposition of both. It is computed based on the spin of an electoron or the polarization of a photon. The value of a qubit is difficult to determine and based on observations there are three things to note:
 1) repeating the same experiment over an over will lead to the same results
 
@@ -17,7 +17,7 @@ Quantum computing is similar but very different from normal computing. The basic
 Quantom computing has real random nature compared to the deterministic qseudorandomness in classical computers. Even a coin toss is not actually random, since it follows some phyical properties if you managed every single parameter like where you hit the coin, how much force you apply, how high it goes, where it lands, etc you will get the same results. This is only percieved as random because even a small change in these values can lead to large change in outcome. In Quantum there is actual randomness and therefore it can be used in some cases classical computers fail at.
 
 
-Chapter 2.
+### Chapter 2.
 Quantum Mechanics relies heavily on linear algebra. All of the spin and subsequence gates and logic for circuits are all build from linear algebra concepts.
 
 Complex number include i, real numbers are what we are used to. For this textbook we only discuss real numbers for quantum computing also generally includes also imaginary numbers.
@@ -46,7 +46,7 @@ Multiply A by its transpose and if it is the identity matrix then it is else it 
 2) To find the combination of values (constants) that you need to multiply with a vector to get a particular value, just multiply that value by the transpose of the vector.
 3) to find the length of a vector given byt he sum of constants and vector, get the sum of the squares of the constants.
 
-Chapter 3.
+### Chapter 3.
 
 Combining these previous two chapters to illustrate spin and qubits.
 
@@ -62,7 +62,7 @@ Now since the probability amplitudes are squared to get the probabilities, a neg
 
 A qubit is any unit ket in R^2. 
 
-Chapter 4.
+### Chapter 4.
 Entanglement
 The Tesor product is a way to join two vector spaces together to make a bigger space and therefore can engtangle the spaces. Therefore you can get instances where observing one qubit can change the value of another qubit.
 
@@ -76,7 +76,30 @@ We can then convert the values of c_0 * d_0 and subsequent values as r,s,t,u whe
 
 When unentangled the tensor product is fully spereable and this means measurement on one qubit has no effect on another. If they are not seperable and must be mized together, then measurement on one qubit can affect the other. 
 
-Chapter 5.
+### Chapter 5.
 This chapter is a discussion on the debate between quantum theory and classical model of determinism. It ddebates and a test from Bell shows which one is accurate. Through this debate it is widely recognized that the classical model is incorrect.
 
-Chapter 6.
+### Chapter 6.
+Boolean logic is an entry way into computations and is used in a similar manner in quantum logic and gates.
+
+NOT gate is an inverter. It simply flips the input as output.
+
+AND gate is where all the inputs must be high for output to be high.
+
+OR gate is where if any of the inputs is high then the output is high.
+
+Exlusive OR gate is only high when only an odd number of inputs is high, therefore it is like the OR gate but is low when both inputs are low for example.
+
+NAND is a gate and represents Not AND. It is a universal set gate which means any boolean expression can be contructed with only this gate.
+
+There is such as thing as reversible gates. Gates are said to release energy when the bit of information is lost. Reversible gates lose no information at all.
+
+CNOT is a reversible gate. It works by takign in two inputs and outputing two outputs. The first in put is a control and the second is data. The control determeines if the NOT operation is conducted on the date. The first output is the same control bit, the second output depends on the control bit but is either the regular or inverted data bit based on if the control is 1 or 0.
+
+Each output has a distinct input and that is why it is reversible, knowing the output allows you to know the input. IF you put two CNOT gates together you get the initial input.
+
+The Toffoli gate is similar to the CNOT gate, it is also called the CCNOT gate in some instances. It does the same thing as the CNOT gate but instead of 1 control it has 2. So there are three inputs and three outputs. Only if both control inputs are 1 does the operation occur.
+
+The Fredkin gate has three inputs and thre outputs. It only has 1 control input but if the control input is high then it flips the seconds and third inputs. If control is high second inputs becomes third output and third input becomes second output.
+
+### Chapter 7.
