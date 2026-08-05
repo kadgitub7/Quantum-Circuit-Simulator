@@ -103,3 +103,24 @@ The Toffoli gate is similar to the CNOT gate, it is also called the CCNOT gate i
 The Fredkin gate has three inputs and thre outputs. It only has 1 control input but if the control input is high then it flips the seconds and third inputs. If control is high second inputs becomes third output and third input becomes second output.
 
 ### Chapter 7.
+
+Qubits must be represented by a basis and the basis must be labelled for convention. In general the basis used is [[1,0], [0,1]]. And [1,0] represents |0> and [0,1] represents |1>
+Therefore a qubit has the form a_0 *|0> + a_1 * |1> where (a_0)^2 + (a_1)^2 = 1.
+
+If there is more than one quibit in the system then we need to take the tensor product of the basis. This needs to be done for how many ever qubits there are.
+
+Similarly the CNOT gate then acts on the tensor where |0> = 0 and |1> = 1. In this way we can represent CNOT(|00>) = |00>, CNOT(|01>) = |01>, CNOT(|10>) = |11>, CNOT(|11>) = |10>. In this way we can then perform an operation on an entire two qubit system. 
+
+All gates act as matrices and are just multiplied with the original matrix of the tesor representing the qubit and therefore convert it into another state.
+
+There are many single qubit gates such as:
+
+I gate = Identify gate, leaves the system unchanged, similar to a wire, represented by mutiplying the system by [[1,0], [0,1]] -> identity matrix
+
+Z gate = relative phase change gate, leaves the basis unchanged but not equivalent system, it is given by representing multiplying the system by [[1,0], [0,-1]]. This causes change in sign of the probability amplitude of the second value which does not change the proabability but changes every otehr quibit other than the basis.
+
+X and Y gate = represent the NOT operation. There is a regular(X) and one that does NOT and also changes the relative phase. X = [[0,1], [1,0]], Y = [[0,-1], [1,0]]
+
+H gate = places the qubit into superposition. It is represented by multiplying the system by [[1/root(2), 1/root(2)], [1/root(2), -1/root(2)]]
+
+The Bell circuit and the reverse bell cricut can be used in conjunction with the other gates to encrypt and decrypt information.
